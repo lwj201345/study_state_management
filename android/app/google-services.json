@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "762964687662",
+    "project_id": "study-state-management",
+    "storage_bucket": "study-state-management.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762964687662:android:37b78784f36e61a13b98bf",
+        "android_client_info": {
+          "package_name": "com.wjkorea.study_state_management"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762964687662-2d1bnal3sn4mkibf6kavnanjk1ktir53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIMYwcJW98KYtbRswtpJdlWHISRqcrcIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762964687662-2d1bnal3sn4mkibf6kavnanjk1ktir53.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
