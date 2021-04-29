@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:study_state_management/models/message.dart';
 import 'package:study_state_management/repo/app_data.dart';
-import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -53,13 +53,41 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: _bottomNavigationBar(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          context.read<AppData>().addMessage(
-                Message(
-                  id: DateTime.now().millisecondsSinceEpoch,
-                  content: DateTime.now().toString(),
-                  authorName: 'woojin',
-                ),
-              );
+          FirebaseFirestore.instance
+              .collection('collection')
+              .doc('U3DJ0kR7P5Ng203lFndx')
+              .update(
+            {
+              'messageList': FieldValue.arrayUnion(
+                [
+                  {
+                    'authorName': 'woojin',
+                    'content': DateTime.now().millisecondsSinceEpoch.toString(),
+                    'id': 0,
+                  },
+                ],
+              ),
+              // 'myBlogList': FieldValue.arrayUnion(
+              //   [
+              //     {
+              //       'authorName': currentUsers.displayName,
+              //       'authorImg': currentUsers.photoURL,
+              //       'date': formatedDate,
+              //       'title': _title.text,
+              //       'imageUrl': blogUrl,
+              //       'webLink': _link.text
+              //     }
+              //   ],
+              // ),
+            },
+          );
+          // context.read<AppData>().addMessage(
+          //       Message(
+          //         id: DateTime.now().millisecondsSinceEpoch,
+          //         content: DateTime.now().toString(),
+          //         authorName: 'woojin',
+          //       ),
+          //     );
         },
         child: Icon(Icons.add),
       ),
