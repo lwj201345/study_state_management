@@ -14,6 +14,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "762964687662-a3pj3lsc1jv5bh183qktaltqe7f1g7ut.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wjkorea.study_state_management",
+            "certificate_hash": "48763062c136d59ba83f16a977ea5b7eddce3bcf"
+          }
+        },
+        {
+          "client_id": "762964687662-toih5sakh1o31b2dak4fd2ij0e6v9j59.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wjkorea.study_state_management",
+            "certificate_hash": "a428e86942b9c2ec43b080fa333452201c8cec65"
+          }
+        },
+        {
           "client_id": "762964687662-2d1bnal3sn4mkibf6kavnanjk1ktir53.apps.googleusercontent.com",
           "client_type": 3
         }
